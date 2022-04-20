@@ -22,6 +22,7 @@ const Home = ()=>{
     }
     const submitData = ()=>{
         axios.post(`https://625f9fb853a42eaa07f7c314.mockapi.io/Axios-Project`,{fName}).then(response=>{
+            console.log(response.data)
             alert("Data is Saved")
             setFlag(!flag)
         }).catch(err=>{
